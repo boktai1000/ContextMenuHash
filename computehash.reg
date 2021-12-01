@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\fciv_md5]
+@="Compute MD5"
+[HKEY_CLASSES_ROOT\*\shell\fciv_md5\command]
+@="cmd.exe /k CertUtil -hashfile \"%1\" MD5"

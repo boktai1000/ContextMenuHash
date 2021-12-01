@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\gethash]
+@="Get File Hash"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\gethash\command]
+@="powershell -WindowStyle Minimized -command get-filehash -literalpath '%1' -algorithm MD5 | fl | clip"
